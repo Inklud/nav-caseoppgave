@@ -1,10 +1,7 @@
 import * as React from "react";
-// import "./index.less";
 import Layout from "../layouts/Layout";
-import Lenkepanel from "nav-frontend-lenkepanel";
-import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
-import { Innholdstittel } from "nav-frontend-typografi";
+import Content from "../content/index.mdx";
 
 const IndexPage = () => {
   return (
@@ -12,21 +9,7 @@ const IndexPage = () => {
       <Helmet>
         <title>Forsiden</title>
       </Helmet>
-      <Innholdstittel style={{ marginBottom: "30px" }}>
-        Velkommen
-      </Innholdstittel>
-      <Lenkepanel
-        linkCreator={(props) => (
-          <Link className="lenkepanel lenkepanel--border" to={props.href}>
-            {props.children}
-          </Link>
-        )}
-        href="/about"
-        tittelProps="normaltekst"
-        border
-      >
-        Gå til om oss
-      </Lenkepanel>
+      <Content />
     </Layout>
   );
 };

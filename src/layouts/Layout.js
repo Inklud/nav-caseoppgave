@@ -4,9 +4,9 @@ import "../assets/css/Layout.less";
 
 const Layout = ({ children }) => {
   return (
-    <div className="main">
+    <div>
       <Navbar />
-      <main style={{ marginTop: "20px" }}>{children} </main>
+      <main className="main">{children}</main>
     </div>
   );
 };
