@@ -10,22 +10,20 @@ const IndexPage = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Forsiden</title>
+        <title>Om oss</title>
       </Helmet>
-      <Innholdstittel style={{ marginBottom: "30px" }}>
-        Velkommen
-      </Innholdstittel>
+      <Innholdstittel style={{ marginBottom: "30px" }}>Om oss</Innholdstittel>
       <Lenkepanel
         linkCreator={(props) => (
           <Link className="lenkepanel lenkepanel--border" to={props.href}>
             {props.children}
           </Link>
         )}
-        href="/about"
+        href="/"
         tittelProps="normaltekst"
         border
       >
-        Gå til om oss
+        Gå til forsiden
       </Lenkepanel>
     </Layout>
   );
